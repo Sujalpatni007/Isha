@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -15,7 +16,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-ZKJJB94BWE');
-</script>	<meta name="google-site-verification" content="HYVgLSa7oFySE3iIHp2KhrvEul_XFVrYYodJKYZPnLQ" />
+</script>	
 </head>
 
 <body class="boxed_wrapper">
@@ -200,30 +201,67 @@
                             <div class="sent-msg"></div>
                         </div>
                     </div>
-                    <form method="post" action="#" id="contact-form" novalidate="novalidate">
-                        <div class="row">
-                            <div class="form-group col-lg-6 col-md-12 col-sm-12" id="name">
-                                <input type="text" name="name" placeholder="Your name" required="" aria-required="true">
-                            </div>
-                            <div class="form-group col-lg-6 col-md-12 col-sm-12" id="cmpname">
-                                <input type="text" name="company-name" placeholder="Your Company name" required="" aria-required="true" value="">
-                            </div>
-                            <div class="form-group col-lg-6 col-md-12 col-sm-12">
-                                <input type="tel" name="phone" placeholder="Your Phone" required="" aria-required="true" maxlength="10">
-                            </div>
-                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                <input type="email" name="email" placeholder="Your Email" required="" aria-required="true">
-                            </div>
-                            <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                <textarea name="message" placeholder="Your Message"></textarea>
-                            </div>
-                            <div class="form-group col-lg-12 col-md-12 col-sm-12 clearfix">
-                                <div class="contact-btn">
-                                    <button type="submit" name="submit-form">Submit</button>
-                                </div>
-                            </div>
-                        </div>
+                    <form id="contact-form" onsubmit="return false;">                         
+                        <div class="row">                             
+                            <div class="form-group col-lg-6 col-md-12 col-sm-12" id="name">                                 
+                                <input type="text" name="name" id="name" placeholder="Your name" required>                             
+                            </div>                             
+                            <div class="form-group col-lg-6 col-md-12 col-sm-12" id="cmpname">                                 
+                                <input type="text" name="company-name" id="company-name" placeholder="Your Company name" required>                             
+                            </div>                             
+                            <div class="form-group col-lg-6 col-md-12 col-sm-12">                                 
+                                <input type="tel" name="phone" id="phone" placeholder="Your Phone" required maxlength="10">                             
+                            </div>                             
+                            <div class="form-group col-lg-6 col-md-6 col-sm-12">                                 
+                                <input type="email" name="email" id="email" placeholder="Your Email" required>                             
+                            </div>                             
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12">                                 
+                                <textarea name="message" id="message" placeholder="Your Message" required></textarea>                             
+                            </div>                             
+                            <div class="form-group col-lg-12 col-md-12 col-sm-12 clearfix">                                 
+                                <div class="contact-btn">                                     
+                                    <button type="button" id="submit-btn">Submit</button>                                 
+                                </div>                             
+                            </div>                         
+                        </div>                                                                     
                     </form>
+                    
+                    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+                    <script>
+                        (function() {
+                            emailjs.init("6QSPrMJGEYxK-y6D7");
+                    
+                            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                                event.preventDefault(); // Stops the form from submitting and redirecting
+                    
+                                var templateParams = {
+                                    to_email: 'engrsiddharth1@gmail.com',
+                                    from_name: document.getElementById('name').value,
+                                    from_company: document.getElementById('company-name').value,
+                                    from_phone: document.getElementById('phone').value,
+                                    from_email: document.getElementById('email').value,
+                                    message: document.getElementById('message').value,
+                                    reply_to: document.getElementById('email').value,
+                                    subject: `New message from ${document.getElementById('name').value} at ${document.getElementById('company-name').value}`
+                                };
+                    
+                                emailjs.send('service_inravyg', 'template_ws5f5da', templateParams)
+                                    .then(function() {
+                                        alert('Message sent successfully!');
+                                        document.getElementById('contact-form').reset();
+                                    }, function(error) {
+                                        console.error('Failed:', error);
+                                        alert('Failed to send message.');
+                                    });
+                            });
+                    
+                        })();
+                    </script>
+                    
+                    
+                    
+                    
+                    
 
                 </div>
             </div>

@@ -2584,7 +2584,7 @@ figure {
   color: hsl(0deg 0% 100%);
   cursor: pointer;
   transition: all 500ms ease;
-  background-color: hsl(36deg 59% 31%);
+  background-color: #f7941e;
   padding: 8px 12px;
   border-radius: 5px;
 }
@@ -4000,7 +4000,7 @@ figure {
 .contact-section .contact-form-area .form-group textarea {
   width: 100%;
   height: 50px;
-  border-bottom: 1px solid #7e5920;
+  border-bottom: 1px solid #f7941e;
   padding: 15px 20px;
   transition: all 500ms ease;
 }
@@ -4017,7 +4017,7 @@ figure {
 .contact-section .contact-form-area .form-group textarea {
   height: 200px;
   resize: none;
-  border: 1px solid #7e5920;
+  border: 1px solid #f7941e;
   border-radius: 0 0 50% 50%;
   margin-top: 15px;
 }
@@ -4033,7 +4033,7 @@ figure {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  background-color: #7e5920;
+  background-color: #f7941e;
   color: #fff;
   cursor: pointer;
   padding: 13px 45px 12px 45px;
@@ -4042,7 +4042,7 @@ figure {
 }
 
 .contact-section .contact-form-area .form-group button:hover {
-  background: #f7941e;
+  background: #7f1617;
   color: #ffffff;
 }
 
@@ -7402,8 +7402,8 @@ figure {
 }
 
 .service-block-four .inner-box .lower-content .link a:hover {
-  color: #7e5920;
-  border-color: #7e5920;
+  color: #f7941e;
+  border-color: #f7941e;
 }
 
 .service-style-four .more-text h4 {
@@ -9374,7 +9374,7 @@ figure {
 }
 
 .mykhana .wmheaad {
-  color: #7e5920;
+  color: #f7941e;
   font-size: 18px;
   line-height: 28px;
   font-weight: 600;
@@ -9445,7 +9445,7 @@ figure {
 }
 
 .sltbtn a {
-  color: #7e5920;
+  color: #f7941e;
   font-weight: 700;
 }
 
@@ -9461,7 +9461,7 @@ figure {
 }
 
 .sltbtn2:hover {
-  background-color: #7e5920;
+  background-color: #f7941e;
 }
 
 .sltbtn2 a {
@@ -9533,7 +9533,7 @@ figure {
 
 .seemenu:hover {
   color: #fff;
-  background-color: #7e5920;
+  background-color: #f7941e;
 }
 
 .pk {
@@ -9699,7 +9699,7 @@ figure {
 
 .callmenu {
   border-radius: 36px;
-  background: var(--Carrot-Orange, #7e5920);
+  background: var(--Carrot-Orange, #f7941e);
   display: inline-block;
   padding: 8px 30px 10px;
   cursor: pointer;
@@ -9720,7 +9720,7 @@ figure {
 }
 
 .cuisines h4 {
-  color: #7e5920;
+  color: #f7941e;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -9743,7 +9743,7 @@ figure {
   font-style: normal;
   font-weight: 600;
   line-height: 30px;
-  color: #7e5920;
+  color: #f7941e;
   padding-top: 10px;
   display: inline-block;
 }
@@ -9806,7 +9806,7 @@ figure {
 
 .service-tab .nav-tabs .nav-link.active {
   border-radius: 36px 0px 0px 36px;
-  background-color: #7e5920;
+  background-color: #f7941e;
   color: #fff;
   padding: 10px 30px;
 }
@@ -10047,7 +10047,7 @@ figure {
 }
 
 .contact-panel {
-  border-top: 1px solid #7e5920;
+  border-top: 1px solid #f7941e;
 }
 
 .rbutton {
@@ -10076,15 +10076,15 @@ figure {
 
 .faq-panel #accordionExample .card .card-header {
   border-radius: 0px 0px 0px 30px;
-  border-bottom: 0.5px solid var(--Field-Drab, #7e5920);
-  border-left: 0.5px solid var(--Field-Drab, #7e5920);
+  border-bottom: 0.5px solid var(--Field-Drab, #f7941e);
+  border-left: 0.5px solid var(--Field-Drab, #f7941e);
   background: rgba(126, 89, 32, 0.02);
 }
 
 .faq-panel #accordionExampleone .card .card-header {
   border-radius: 0px 0px 30px 0px;
-  border-right: 0.5px solid var(--Field-Drab, #7e5920);
-  border-bottom: 0.5px solid var(--Field-Drab, #7e5920);
+  border-right: 0.5px solid var(--Field-Drab, #f7941e);
+  border-bottom: 0.5px solid var(--Field-Drab, #f7941e);
   background: rgba(126, 89, 32, 0.02);
 }
 
@@ -10178,7 +10178,7 @@ figure {
 .address-panel ul li h6 {
   font-size: 20px;
   font-weight: 600;
-  color: #7e5920;
+  color: #f7941e;
   padding-bottom: 10px;
 }
 
