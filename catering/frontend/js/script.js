@@ -583,7 +583,7 @@
 
 	(function () {
 		var options = {
-			whatsapp: "+916366968472", // WhatsApp number
+			whatsapp: "+919019240587", // WhatsApp number
 			call_to_action: "Message us", // Call to action
 			button_color: "#FF6550",
 			position: "left", // Position may be 'right' or 'left'

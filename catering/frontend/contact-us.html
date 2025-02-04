@@ -201,7 +201,7 @@
                             <div class="sent-msg"></div>
                         </div>
                     </div>
-                    <form id="contact-form" onsubmit="return false;">                         
+                    <form id="contact-form">                         
                         <div class="row">                             
                             <div class="form-group col-lg-6 col-md-12 col-sm-12" id="name">                                 
                                 <input type="text" name="name" id="name" placeholder="Your name" required>                             
@@ -226,25 +226,29 @@
                         </div>                                                                     
                     </form>
                     
-                    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+                    
+                    <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+                    </script>
+                 
+
                     <script>
                         (function() {
                             emailjs.init("6QSPrMJGEYxK-y6D7");
                     
-                            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                                event.preventDefault(); // Stops the form from submitting and redirecting
-                    
+                            document.getElementById('submit-btn').addEventListener('click', function(event) {
+                                event.preventDefault(); // Prevents form from redirecting
+                                
                                 var templateParams = {
-                                    to_email: 'engrsiddharth1@gmail.com',
+                                    to_email: 'sujalpatni1008@gmail.com',
                                     from_name: document.getElementById('name').value,
                                     from_company: document.getElementById('company-name').value,
                                     from_phone: document.getElementById('phone').value,
                                     from_email: document.getElementById('email').value,
                                     message: document.getElementById('message').value,
                                     reply_to: document.getElementById('email').value,
-                                    subject: `New message from ${document.getElementById('name').value} at ${document.getElementById('company-name').value}`
                                 };
-                    
+                                
                                 emailjs.send('service_inravyg', 'template_ws5f5da', templateParams)
                                     .then(function() {
                                         alert('Message sent successfully!');
@@ -253,11 +257,9 @@
                                         console.error('Failed:', error);
                                         alert('Failed to send message.');
                                     });
-                            });
-                    
+                            }); 
                         })();
                     </script>
-                    
                     
                     
                     
@@ -482,7 +484,6 @@
 <script src="js/jquery.countTo.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/scriptf.js"></script>
-<script src="js/send-email.js"></script>
 <script src="js/header.js"></script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'90c1aea7d8fde22e',t:'MTczODU3Nzk2Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='cdn-cgi/challenge-platform/h/b/scripts/jsd/6682e961b853/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 
